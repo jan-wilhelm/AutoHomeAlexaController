@@ -72,7 +72,8 @@ public class GuiAlexaDevice {
 	public boolean isActivated() {
 		return this.isActivated(false);
 	}
-
+	
+	// Make the robot click at the selected position
 	public void click() {
 		this.robot.mouseMove(this.micClickPosition[0], this.micClickPosition[1]);
 		this.robot.mousePress(CLICK_MASK);
